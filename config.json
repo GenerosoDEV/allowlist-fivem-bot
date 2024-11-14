@@ -1,0 +1,14 @@
+{
+    "APPROVED_ROLE": 1306691259427061830,
+    "APPROVED_CHANNEL": 1306686587383320626,
+    "FAILED_CHANNEL": 1306686599429488690,
+    "ROLE_TO_REMOVE": 1306691273029189682,
+    "REASONS": ["História Fraca", "Objetivo Fraco", "Uso de IA", "Nome inapropriado", "Idade mínima não atingida", "Outro"],
+    "FIVEM_IP": "45.164.125.62",
+    "FIVEM_PORT": 30123,
+    "STATUS_CHANNEL": 1306694992890167348,
+    "PLAYERS_CHANNEL": 1306695042626490519,
+    "STATUS_ONLINE_TEXT": "🟢 Status: Online",
+    "STATUS_OFFLINE_TEXT": "🔴 Status: Offline",
+    "PLAYERS_TEXT": "🔋 Jogadores: <players>"
+}
