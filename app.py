@@ -1,4 +1,4 @@
-import dotenv, discord, os, asyncio, json, datetime, requests
+import dotenv, discord, os, asyncio, json, datetime, requests, sys
 from discord.ext import commands, tasks
 from discord import app_commands
 
@@ -6,8 +6,13 @@ from discord import app_commands
 client = commands.Bot("g!", intents=discord.Intents.all())
 client.remove_command("help")
 
-client.remove_command("help")
-dotenv.load_dotenv()
+if getattr(sys, 'frozen', False): 
+    current_path = os.path.dirname(sys.executable)
+else:
+    current_path = os.path.dirname(__file__)
+
+dotenv_path = os.path.join(current_path, '.env')
+dotenv.load_dotenv(dotenv_path)
 
 with open("./config.json", "r", encoding='utf-8') as f:
     CONFIG = json.load(f)
