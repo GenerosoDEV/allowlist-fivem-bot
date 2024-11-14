@@ -57,14 +57,14 @@ async def atualizar_server_info():
 @client.event
 async def on_ready():
     try:
-        try:
-            await atualizar_server_info.start()
-        except: 
-            pass
         print(f"\n\nID: {client.user.id}\nNome: {client.user}")
         await app_commands.CommandTree.sync(client.tree)
         print("Slash commands sincronizados!")
         await client.change_presence(status=discord.Status.online, activity=discord.Activity(type=discord.ActivityType.watching, name="Gringa RP - Allowlist!"))
+        try:
+            await atualizar_server_info.start()
+        except: 
+            pass
     except Exception as e:
         print(f"Erro nas logs de inicialização: {e}")
 
